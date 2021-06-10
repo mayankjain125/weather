@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+    <h1 class = "heading">WEATHER INFO</h1>
+    <button onclick="getloc()" id="btn">
+        To get data of your location press here
+    </button>
+    <br>
+
+    <forum id = "forum">
+
+        <input type = "text" id = "search-bar" class = "search-bar" value="Enter City Name">
+        <input type = "button" id = "search-btn" value="Search">
+
+    </forum>
+    
+    
+    <div id ="position">
+        <div id = "londitude" class ="longitude">
+            <p>Longitude = </p>
+            <p class = "longitude" id="longitude-data">----------</p>
+        </div>
+        <div id = "latitude">
+            <p>Latitude = </p>
+            <p class = "latitude" id="latitude-data">----------</p>
+        </div>    
+        <div id="temp">
+            <p>Temprature = </p>
+            <p class = "temprature" id = temprature-data>------</p>
+        </div>
+        <div id="desc">
+            <p>Description = </p>
+            <p class = "description" id = description-data>------</p>
+        </div>
+        <div id="wind">
+            <p>Wind speed = </p>
+            <p class = "wind" id = wind-data>------</p>
+        </div>
+    </div>    
+</head>
+<body>
+    <Script src = "script.js"></Script>
+</body>
+</html>
